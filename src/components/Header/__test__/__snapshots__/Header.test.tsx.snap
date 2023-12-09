@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render to match snapshot 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="wrapper main"
+    >
+      <a
+        className="logo"
+        href="/"
+      >
+        Search Recipes
+      </a>
+    </div>
+  </div>
+</header>
+`;

@@ -1,0 +1,24 @@
+.title {
+  position: relative;
+  margin-bottom: var(--md-spacing);
+}
+
+.primary {
+  position: relative;
+
+  &::after {
+    background-color: var(--color-text-dark);
+    content: '';
+    height: var(--xsm-spacing);
+    left: 0;
+    position: absolute;
+    width: var(--lg-spacing);
+    top: calc(100% + var(--xsm-spacing));
+  }
+}
+
+.secondary {
+  text-decoration: underline;
+  -webkit-text-decoration-color: var(--color-muted);
+  text-decoration-color: var(--color-muted);
+}

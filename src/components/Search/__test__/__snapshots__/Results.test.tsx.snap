@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Results should render "Loading" to match snapshot 1`] = `
+<div
+  className="grid"
+>
+  <div
+    className="col col-sm-12 col-md-6 col-lg-4"
+  >
+    <div
+      className="skeleton"
+    >
+      <div
+        className="loading"
+        style={Object {}}
+      />
+    </div>
+  </div>
+  <div
+    className="col col-sm-12 col-md-6 col-lg-4"
+  >
+    <div
+      className="skeleton"
+    >
+      <div
+        className="loading"
+        style={Object {}}
+      />
+    </div>
+  </div>
+  <div
+    className="col col-sm-12 col-md-6 col-lg-4"
+  >
+    <div
+      className="skeleton"
+    >
+      <div
+        className="loading"
+        style={Object {}}
+      />
+    </div>
+  </div>
+  <div
+    className="col col-sm-12 col-md-6 col-lg-4"
+  >
+    <div
+      className="skeleton"
+    >
+      <div
+        className="loading"
+        style={Object {}}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Results should render "Results" to match snapshot 1`] = `
+<div
+  className="grid"
+>
+  <div
+    className="col col-sm-12 col-md-6 col-lg-4"
+  >
+    <a
+      data-mocked-link={true}
+    >
+      <h3
+        className="title"
+      >
+        title
+      </h3>
+      <div
+        className="image"
+      >
+        <img
+          alt="title"
+          src="image"
+        />
+      </div>
+    </a>
+  </div>
+</div>
+`;
