@@ -1,0 +1,21 @@
+.skeleton {
+  background: rgba(var(--rgba-dark), 0.2);
+  animation: loading 1s ease-in-out 0.5s infinite alternate;
+  border-radius: var(--sm-spacing);
+  width: 100%;
+}
+
+.loading {
+  display: block;
+  padding-top: calc(9 / 16 * 100%);
+}
+
+@keyframes loading {
+  100% {
+    background: rgba(var(--rgba-dark), 0.1);
+  }
+
+  100% {
+    background: rgba(var(--rgba-dark), 0.05);
+  }
+}

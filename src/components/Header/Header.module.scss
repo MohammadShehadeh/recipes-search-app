@@ -1,0 +1,32 @@
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  text-align: center;
+  color: var(--color-text-light);
+  padding: var(--md-spacing) 0;
+}
+
+.wrapper {
+  padding-bottom: var(--md-spacing);
+  position: relative;
+  font-size: var(--header-size);
+
+  &::after {
+    background-color: var(--color-text-light);
+    bottom: 0;
+    content: '';
+    height: 1px;
+    opacity: 0.3;
+    left: var(--md-spacing);
+    right: var(--md-spacing);
+    position: absolute;
+  }
+}
+
+.logo {
+  color: var(--color-text-light);
+}
