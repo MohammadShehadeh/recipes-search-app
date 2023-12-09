@@ -22,12 +22,12 @@ type RecipesData = {
 };
 
 export const Search = () => {
-  const [searchRecipes, setSearchRecipes] = useState<RecipeData[]>([]);
+  const [searchRecipes, setSearchRecipes] = useState<RecipeData[] | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const searchRecipesHandler = useCallback(async (query: string) => {
     if (!query) {
-      setSearchRecipes([]);
+      setSearchRecipes(null);
       return;
     }
 
