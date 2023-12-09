@@ -1,0 +1,49 @@
+@import '../../../styles/lib/breakpoints';
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--md-spacing);
+}
+
+.row {
+  margin-block: var(--md-spacing);
+}
+
+.col {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Responsive classes */
+@for $i from 1 through 12 {
+  .col-lg-#{$i} {
+    grid-column: span $i;
+  }
+
+  .col-md-#{$i} {
+    @include respond-below('md') {
+      grid-column: span $i;
+    }
+  }
+
+  .col-sm-#{$i} {
+    @include respond-below('sm') {
+      grid-column: span $i;
+    }
+  }
+}
+
+@for $i from 1 through 6 {
+  .col-md-order-#{$i} {
+    @include respond-below('md') {
+      order: $i;
+    }
+  }
+
+  .col-sm-order-#{$i} {
+    @include respond-below('sm') {
+      order: $i;
+    }
+  }
+}

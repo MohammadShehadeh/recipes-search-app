@@ -1,0 +1,43 @@
+@import '../../styles/lib/breakpoints';
+
+.form {
+  position: sticky;
+  top: var(--sm-spacing);
+  margin-top: 73px;
+
+  @include respond-below('md') {
+    margin-top: var(--md-spacing);
+  }
+}
+
+.fieldset {
+  padding: var(--lg-spacing) var(--md-spacing);
+  border-radius: var(--sm-spacing);
+}
+
+.legend {
+  padding-inline: var(--sm-spacing);
+}
+
+.group {
+  position: relative;
+}
+
+.input {
+  margin-bottom: var(--sm-spacing);
+  padding-right: var(--lg-spacing);
+}
+
+.submit {
+  padding: var(--xsm-spacing);
+  border-radius: var(--sm-spacing);
+  top: var(--xsm-spacing);
+  position: absolute;
+  right: 0;
+  top: var(--xsm-spacing);
+}
+
+.clear {
+  margin-block: var(--sm-spacing);
+  color: var(--color-link);
+}

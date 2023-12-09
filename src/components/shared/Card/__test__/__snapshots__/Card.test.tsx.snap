@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should render to match snapshot 1`] = `
+<a
+  data-mocked-link={true}
+>
+  <h3
+    className="title"
+  >
+    title
+  </h3>
+  <div
+    className="image"
+  >
+    <img
+      alt="title"
+      src="image"
+    />
+  </div>
+</a>
+`;

@@ -1,0 +1,18 @@
+.container {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(var(--md-spacing), 1fr)
+    [main-start] minmax(0, 1400px) [main-end]
+    minmax(var(--md-spacing), 1fr) [full-end];
+
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.full {
+  grid-column: full;
+}
+
+.main {
+  grid-column: main;
+}

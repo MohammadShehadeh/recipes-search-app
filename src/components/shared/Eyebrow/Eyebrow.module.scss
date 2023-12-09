@@ -1,0 +1,24 @@
+.eyebrow {
+  align-items: center;
+  border-radius: var(--md-spacing);
+  display: inline-flex;
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+.contained {
+  background-color: var(--color-eyebrow-background);
+  color: var(--color-eyebrow);
+  margin: var(--xsm-spacing) 0;
+  border: 1px solid var(--color-eyebrow-border);
+}
+
+.outlined {
+  color: var(--color-eyebrow-secondary);
+  box-shadow: var(--color-eyebrow--secondary-box-shadow);
+}
+
+.label {
+  font-size: 12px;
+  padding: var(--xsm-spacing) var(--sm-spacing);
+}
