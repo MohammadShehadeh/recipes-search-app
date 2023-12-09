@@ -7,11 +7,19 @@ export const Results = ({
   recipes,
   isLoading,
 }: {
-  recipes?: RecipeData[];
+  recipes?: RecipeData[] | null | undefined;
   isLoading?: boolean;
 }) => {
   if (isLoading) {
     return <Loading />;
+  }
+
+  if (recipes === undefined) {
+    return <p>Not Found Sorry, something went wrong</p>;
+  }
+
+  if (recipes?.length === 0) {
+    return <p>No Results Found</p>;
   }
 
   return (
