@@ -1,0 +1,103 @@
+@mixin icon-hover-effect-active() {
+  background-color: var(--color-muted-background);
+  color: var(--color-text);
+
+  svg {
+    fill: currentColor;
+  }
+}
+
+@mixin icon-hover-effect() {
+  cursor: pointer;
+  border-radius: var(--sm-spacing);
+  padding: var(--sm-spacing);
+
+  &:hover {
+    @include icon-hover-effect-active;
+  }
+}
+
+@mixin card-hover-effect() {
+  border-radius: var(--sm-spacing);
+  padding: var(--md-spacing);
+  position: relative;
+
+  &::after {
+    background: linear-gradient(transparent, var(--color-text), transparent);
+    content: '';
+    height: 70px;
+    left: -1px;
+    opacity: 0;
+    position: absolute;
+    top: 65%;
+    transition:
+      top 600ms ease,
+      opacity 600ms ease;
+    width: 1px;
+  }
+
+  &:hover {
+    background-color: var(--color-card-background-hover);
+
+    &::after {
+      top: 25%;
+      opacity: 1;
+    }
+  }
+}
+
+@mixin modal($padding) {
+  background-color: var(--color-modal-background);
+  border-radius: var(--sm-spacing);
+  border: 2px solid var(--color-border);
+  padding: var(--#{$padding}-spacing);
+  position: absolute;
+}
+
+@mixin link-effect() {
+  color: var(--color-text);
+  transition: color 0.25s ease;
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}
+
+@mixin highlight-link-effect() {
+  position: relative;
+
+  &::before {
+    background-color: currentColor;
+    content: '';
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 100%;
+    transition: width 0.25s ease;
+    width: 0;
+  }
+
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+@mixin title-effect() {
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  position: relative;
+  text-align: center;
+
+  &::after {
+    background: linear-gradient(to left, transparent, var(--color-primary), transparent);
+    bottom: 0;
+    content: '';
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 80%;
+  }
+}

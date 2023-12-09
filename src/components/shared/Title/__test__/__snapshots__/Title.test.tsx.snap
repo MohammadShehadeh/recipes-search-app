@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title should render "primary" to match snapshot 1`] = `
+<h2
+  className="title primary"
+>
+  Primary Title
+</h2>
+`;
+
+exports[`Title should render "secondary" to match snapshot 1`] = `
+<h2
+  className="title secondary"
+>
+  Secondary Title
+</h2>
+`;

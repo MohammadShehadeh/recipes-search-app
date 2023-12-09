@@ -1,0 +1,14 @@
+.recipe {
+  min-height: 600px;
+}
+
+.wrapper {
+  margin-top: var(--sm-spacing);
+}
+
+.back {
+  align-items: center;
+  display: inline-flex;
+  gap: var(--md-spacing);
+  margin-bottom: var(--md-spacing);
+}
