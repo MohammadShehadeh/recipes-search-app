@@ -29,10 +29,17 @@ Before you begin, ensure you have the following installed:
    cd recipes-search-app
    ```
 
-2. Install dependencies:
+2. Select the desired Node.js version
+   ```bash
+   nvm use
+   ```
+- nvm: [Installing and Updating](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+3. Install dependencies:
    ```bash
    npm ci
    ```
+
 3. To add your api key; navigate to `src/constants/apis.ts` and include the api key
 
 ## Available Scripts
