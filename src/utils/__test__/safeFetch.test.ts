@@ -1,6 +1,6 @@
-import { fetchRequest } from '../';
+import { safeFetch } from '..';
 
-describe('fetchRequest', () => {
+describe('safeFetch', () => {
   afterEach(() => {
     jest.restoreAllMocks();
   });
@@ -10,7 +10,7 @@ describe('fetchRequest', () => {
     const response = new Response(JSON.stringify(responseData));
     jest.spyOn(global, 'fetch').mockResolvedValue(response);
 
-    const result = await fetchRequest('/api/data');
+    const result = await safeFetch('/api/data');
 
     expect(result).toEqual(responseData);
   });
@@ -19,7 +19,7 @@ describe('fetchRequest', () => {
     const errorMessage = 'Failed to fetch data';
     jest.spyOn(global, 'fetch').mockRejectedValue(new Error(errorMessage));
 
-    const result = await fetchRequest('/api/data');
+    const result = await safeFetch('/api/data');
 
     expect(result).toEqual({ message: new Error(errorMessage), error: true });
   });

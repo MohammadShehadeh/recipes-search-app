@@ -10,9 +10,9 @@ describe('Loading', () => {
   });
 
   it('should render Loading correctly', () => {
-    render(<Loading length={6} data-testid="loading"  />);
+    render(<Loading length={6} data-testid="loading" />);
 
-    const LoadingElements = screen.queryAllByTestId("loading");
+    const LoadingElements = screen.queryAllByTestId('loading');
     expect(LoadingElements.length).toBe(6);
   });
 });
