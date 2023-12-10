@@ -23,7 +23,9 @@ describe('Footer', () => {
 
   it('should render Footer correctly', () => {
     render(<Footer />);
-    const footerElement = screen.getByText(/Copyright © 2023 Mohammad Shehadeh. All rights reserved/i);
+    const footerElement = screen.getByText(
+      /Copyright © 2023 Mohammad Shehadeh. All rights reserved/i
+    );
     expect(footerElement).toBeInTheDocument();
   });
 });

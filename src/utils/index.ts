@@ -1,1 +1,2 @@
-export { fetchRequest } from './fetchRequest';
+export { safeFetch } from './safeFetch';
+export { getSearchUrl, getRecipeInfoUrl } from './urls';

@@ -1,10 +1,13 @@
 # Recipes Search App
 
-This Recipes Search App allows users to search for recipes using the Spoonacular API. It provides a user-friendly interface to discover and explore a wide variety of recipes.
+This Recipes Search App allows users to search for recipes using the Spoonacular API. It
+provides a user-friendly interface to discover and explore a wide variety of recipes.
 
 ## Features
+
 - Search for recipes by keywords
-- View detailed information about each recipe, including ingredients, instructions, and nutritional facts.
+- View detailed information about each recipe, including ingredients, instructions, and
+  nutritional facts.
 
 # Getting Started
 
@@ -12,20 +15,24 @@ This project was bootstrapped with
 [Create React App](https://github.com/facebook/create-react-app).
 
 ### Prerequisites
+
 Before you begin, ensure you have the following installed:
+
 - Node.js: [Download and install Node.js](https://nodejs.org/)
 
 ### Installation
+
 1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/MohammadSheadeh/recipes-search-app.git
-    cd recipes-search-app
-    ```
+   ```bash
+   git clone https://github.com/MohammadSheadeh/recipes-search-app.git
+   cd recipes-search-app
+   ```
+
 2. Install dependencies:
-    ```bash
-    npm ci
-    ```
+   ```bash
+   npm ci
+   ```
 3. To add your api key; navigate to `src/constants/apis.ts` and include the api key
 
 ## Available Scripts
@@ -40,6 +47,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+### npm run format
+
+Prettier is used for code formatting. To ensure consistent formatting throughout the project.\
+This command will automatically format the code based on the rules defined in the .prettierrc configuration
+file.
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
@@ -48,7 +61,7 @@ for more information.
 
 #### `npm run coverage`
 
-Launches the test runner in the interactive watch mode to measure code coverage
+Launches the test runner in the interactive watch mode to measure code coverage.\
 See the section about [coverage reporting](https://create-react-app.dev/docs/running-tests/#coverage-reporting)
 for more information.
 
@@ -80,6 +93,7 @@ deployments, and you shouldn’t feel obligated to use this feature. However we 
 this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ### Other Information
+
 <img src="./design.png" alt="system design" />
 
 ## Learn More

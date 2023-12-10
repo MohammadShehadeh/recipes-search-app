@@ -8,7 +8,6 @@ const cardMock = {
   title: 'title',
 };
 
-
 jest.mock('react-router-dom', () => ({
   ...(jest.requireActual('react-router-dom') as any),
   Link: ({ children }: any) => <a data-mocked-link>{children}</a>,

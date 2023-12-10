@@ -4,9 +4,7 @@ import { Eyebrow } from '..';
 
 describe('Eyebrow', () => {
   it('should render "contained" to match snapshot', () => {
-    const tree = renderer
-      .create(<Eyebrow label="Contained Eyebrow" />)
-      .toJSON();
+    const tree = renderer.create(<Eyebrow label="Contained Eyebrow" />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 

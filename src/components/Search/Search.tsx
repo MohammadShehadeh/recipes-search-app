@@ -6,8 +6,7 @@ import { Title } from '../shared/Title';
 
 import { Form, Results } from '.';
 
-import { API_KEY, FOOD_API } from '../../constants';
-import { fetchRequest } from '../../utils';
+import { safeFetch, getSearchUrl } from '../../utils';
 
 import styles from './Search.module.scss';
 
@@ -33,9 +32,7 @@ export const Search = () => {
 
     setIsLoading(true);
 
-    const response = await fetchRequest<RecipesData | { error: true }>(
-      `${FOOD_API}/recipes/complexSearch?apiKey=${API_KEY}&query=${query}`
-    );
+    const response = await safeFetch<RecipesData | { error: true }>(getSearchUrl(query));
 
     if (!('error' in response)) {
       setSearchRecipes(response.results);
