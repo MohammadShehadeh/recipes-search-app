@@ -1,27 +1,17 @@
-import { Hero } from './components/Hero';
-import { Header } from './components/Header';
-import { Search } from './components/Search';
-import { Footer } from './components/Footer';
 import { Route, Routes } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
-import { Recipe } from './components/Recipe';
+import { RecipeDetails } from './pages/RecipeDetails';
+import { Home } from './pages/Home';
 
 function App() {
   return (
-    <>
-      <Header />
-      <main>
-        <Hero />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Search />} />
-            <Route path="recipe/:id" element={<Recipe />} />
-            <Route path="*" element={<Search />} />
-          </Routes>
-        </BrowserRouter>
-      </main>
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="recipe/:id" element={<RecipeDetails />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
